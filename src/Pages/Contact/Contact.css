@@ -126,9 +126,18 @@
     border-color: blueviolet;
     min-height: 30px;
     text-align:start;
-    
+    font-family: system-ui;
+
 }
 .message{
+    padding: 10px;
+    margin-top: 2%;
+    border-radius: 6px;
+    border-width: 1px;
+    border-color: blueviolet;
+    min-height: 30px;
+    text-align:start;
+    font-family: system-ui;
     height: 40%;
 }
 

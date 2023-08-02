@@ -7,12 +7,15 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import NotificationOkay from "../../Components/Notification/NotificationOkay";
+import NotificationError from "../../Components/Notification/NotificationError";
 const Contact = ()=>{
     const control = useAnimation()
     const [ref, inView] = useInView()
     let visible = document.getElementById("container")
     let [viewBoolean, setViewBoolean] = useState(false)
     const [notification, setNotification] = useState("off")
+    const [notificationError, setNotificationError] = useState("off")
+
   const form = useRef();
 
 
@@ -34,6 +37,8 @@ const Contact = ()=>{
            
       }, (error) => {
           console.log("erro");
+          setNotificationError("on")
+          setTimeout(()=>{setNotificationError("off")}, 7000);   
       });
     }};
   useEffect(() => {
@@ -55,6 +60,7 @@ const Contact = ()=>{
 
     return(
         <section id="contact" ref={ref}>
+            <NotificationError state={notificationError}></NotificationError>
             <NotificationOkay state={notification}></NotificationOkay>
             <div id="container" className="hidden" >
                 <div className="contactInfo">
@@ -99,7 +105,7 @@ const Contact = ()=>{
                             
                             <input id="email" name="user_email" type="text" className="email" placeholder="Your Email"/>
                             <input id="subject" name="user_subject" type="text" placeholder="Subject"/>
-                            <input id="message" name="message" type="text" placeholder="Message" className="message"/>
+                            <textarea rows="6" id="message" name="message" type="text" placeholder="Message" className="message"/>
                            
                         </div>
                         <div className="button">
