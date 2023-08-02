@@ -1,0 +1,75 @@
+.IconContainer img{
+    width: 5%;
+    min-width: 80px;
+    max-height: 80px;
+    border-radius: 100%;
+    filter: grayscale(100);
+}
+.IconContainer{
+    width: 80px;
+    padding: 10px;
+    border-radius: 100%;
+}
+.TechName{
+    opacity: 0;
+    color: white;
+    /* margin-bottom: 5px; */
+    background-color: white;
+    border-radius: 50px;
+    padding: 10px;
+    z-index: 10;
+    transform: translateY(30px);
+
+}
+.IconContainer::after{
+    content: "";
+    position: relative;
+    height: 20px;
+    width: 20px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+}
+.TechContainer{
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.TechContainer:hover span{
+    color: black;
+    opacity: 100%;
+    transition: 0.29s;
+    transition-property: translateY(0px);
+    transform: translateY(0px);
+
+}
+.TechContainer:hover .arrow{
+    opacity: 100%;
+    animation-fill-mode:forwards;
+    transform: rotateZ(45deg);
+    transition-property: translateY(0px);
+    
+}
+.TechContainer:hover .IconContainer img{
+    filter: grayscale(0);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.arrow{
+    content: "";
+    transform: rotateZ(45deg);
+    transform: translateY(30px);
+
+    background-color: brown;
+    width: 15px;
+    height: 15px;
+    bottom: -43px;
+    position: relative;
+    background-color: white;
+    opacity: 0;
+    
+    z-index: 1;
+}

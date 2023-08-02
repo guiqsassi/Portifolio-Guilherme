@@ -1,0 +1,191 @@
+.hidden{
+ opacity: 0; 
+ transition: 1.5s;
+ height: 70%;
+ display: flex;
+ transform: translateX(-100%);
+ flex-direction: row;
+}
+.show{
+    opacity: 1;
+    transition: 1.5s;
+    transform: translateX(0%);
+
+}
+#contact{
+    height: 80vh;
+}
+#contact .tittle{
+ height: 25%;
+}
+.linkBar{
+    width: 100%;
+    display: flex;
+    grid-gap: 20px;
+    height: 15%;
+    align-items: center;
+    justify-content: center;
+}
+.tittle > h2{
+    color: white;
+    font-size: xxx-large;
+    font-family: 'Renogare', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+}
+#contact > .container{
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+
+    opacity: 0; 
+    transition: 1s;
+
+}
+.contactInfo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.emailForm{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.formContainer{
+    width: 70%;
+    height: 90%;
+    background-color: white;
+    border-radius: 20px;
+}
+.info{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    grid-gap: 25px;
+
+}
+.icon{
+    color: rgb(179, 97, 255);
+    border-radius: 100%;
+}
+.myInformation{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.myInformation > h4{
+    color: white;
+    font-size: large;
+    margin: 0%;
+    margin-left: 5%;
+}
+.iconContainer{
+    background-color: rgb(179, 97, 255);
+    
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.subTittle {
+    padding: 5% 0% 0 7%;
+}
+.subTittle h2{
+    font-size: x-large;
+}
+.formInputs{
+    display: flex;
+    flex-direction: column;
+    padding: 0 7% 0 7%;
+    height: 80%;
+    
+}
+.emailForm form{
+    height: 80%;
+}
+.formInputs input{
+    padding: 10px;
+    margin-top: 2%;
+    border-radius: 6px;
+    border-width: 1px;
+    border-color: blueviolet;
+    min-height: 30px;
+    text-align:start;
+    
+}
+.message{
+    height: 40%;
+}
+
+.button{
+    height: 20%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-end;
+    padding: 0 7% 0 7%;
+}
+.submitButton{
+    min-width: 40px;
+    width: 30%;
+    height: 60%;
+    background-color: blueviolet;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 0;
+    font-family: 'Soniano Sans Unicode', sans-serif;
+    font-size: 16px;
+    max-width: 400px;
+  
+}
+@media (max-width: 800px) {
+    #contact{
+        height: 100vh;
+    }
+    .hidden{
+        height: 100%;
+        flex-direction: column
+    }
+    .contactInfo{
+        width: 100%;
+    }
+    .emailForm{
+        width: 100%;
+    }
+    .formContainer{
+        width: 80%;
+    }
+    .myInformation > h4{
+        color: white;
+        font-size: 90%;
+        margin: 0%;
+        /* width: 100%; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5%;
+    }
+    .myInformation{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

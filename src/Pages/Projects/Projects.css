@@ -1,0 +1,45 @@
+#projects{
+    height: 100vh;
+    overflow-x: hidden;
+}
+.containerProjects{
+    opacity: 0;
+    transition: 1.5s;
+    transform: translateX(100%);
+    height: 100%;
+}
+.show{
+    opacity: 1;
+    transition: 1.5s;
+    transform: translateX(0%);
+
+}
+#projects > .tittle{
+    width: 100%;
+    height: 200px;
+    /* background-color: aliceblue; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.container > .tittle > h2{
+    color: white;
+    font-size: xxx-large;
+    font-family: 'Renogare', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+}
+.tittle > h2{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projetos{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
