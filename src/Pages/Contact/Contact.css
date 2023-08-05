@@ -149,6 +149,7 @@
     text-align:start;
     font-family: system-ui;
     height: 40%;
+    resize: none;
 }
 
 .button{
