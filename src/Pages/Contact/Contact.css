@@ -59,6 +59,9 @@
     /* align-items: center; */
     flex-direction: column;
     justify-content: center;
+    min-height: 480px;
+    max-height: 534px;
+
 }
 .emailForm{
     width: 40%;
@@ -67,7 +70,8 @@
     align-items: center;
     justify-content: center;
     min-height: 480px;
-    
+    max-height: 534px;
+
 }
 .formContainer{
     width: 70%;
