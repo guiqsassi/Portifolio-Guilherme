@@ -66,6 +66,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 480px;
     
 }
 .formContainer{
@@ -100,13 +101,14 @@
     font-size: large;
     margin: 0%;
     margin-left: 5%;
+    min-width: 200px;
 }
 .iconContainer{
     background-color: rgb(179, 97, 255);
     
     border-radius: 100%;
-    width: 50px;
-    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
