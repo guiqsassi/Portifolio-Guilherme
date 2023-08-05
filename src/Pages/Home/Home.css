@@ -157,7 +157,8 @@ button:hover{
  
   }
   .photo{
-    align-items: center;
+    margin-bottom: 30%;
+    align-items: end;
     justify-content: center;
   }
   .right img{

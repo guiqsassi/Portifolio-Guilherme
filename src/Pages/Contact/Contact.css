@@ -59,9 +59,8 @@
     /* align-items: center; */
     flex-direction: column;
     justify-content: center;
-    min-height: 480px;
+      min-height: 480px;
     max-height: 534px;
-
 }
 .emailForm{
     width: 40%;
@@ -181,6 +180,11 @@
     max-width: 400px;
   
 }
+@media (max-width:1300px){
+    .emailForm{
+        width: 55%;
+    }
+} 
 @media (max-width: 800px) {
     #contact{
         height: 100vh;
@@ -220,4 +224,8 @@
         align-items: center;
         justify-content: center;
     }
+    .hidden{
+        height: 100vh;
+    }
+
 }
