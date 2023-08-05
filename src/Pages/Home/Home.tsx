@@ -11,10 +11,10 @@ function Home (){
         <div className="aboutMe">
         <div className="content">
         <span className="subtittle">
-        Front-end Devloper
+        Front-end Devloper 
         </span>
         <p className="tittle">
-        Olá, eu sou <br/> Guilherme Q. Sassi
+        Olá, eu sou 👋<br/> Guilherme Q. Sassi
         </p>
         <div className="buttons">
             <a download="Currículo Guilherme Queiroz Sassi" href={cv}>

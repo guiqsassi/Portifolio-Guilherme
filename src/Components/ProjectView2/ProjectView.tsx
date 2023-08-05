@@ -1,40 +1,31 @@
-import "./ProjectView.css"
+import "./ProjectView2.css"
 import javascriptLogo from "../../images/Javascript.png"
 import typescriptLogo from "../../images/Typescript.png"
 import htmlLogo from "../../images/html.png"
 import cssLogo from "../../images/css.png"
 import reactLogo from "../../images/React.png"
 import { FaExternalLinkAlt} from "react-icons/fa";
-import { useInView } from "react-intersection-observer";
-import { useEffect, useState } from "react";
-import { motion, useAnimation } from "framer-motion";
 import { Url } from "url"
-import { BsGithub } from "react-icons/bs"
 type ProjectViewProps = {
     name: string
     image: string
     description: string
     techs: string[]
-    linkExec: string
+    link: string
     invertido: string
-    date: string
-    linkGit: string
 }
 
-function ProjectView({name, image, description, techs, linkExec, invertido, date,linkGit}: ProjectViewProps){
-
-
+function ProjectView2({name, image, description, techs, link, invertido}: ProjectViewProps){
+    
     return(
-        <div id="ProjectContainer" className="projectContainer">
-            <div className="projectImage">
-                <img src={image}/>
+      
+        <div className="ProjectViewContainer">
+            <div className="ProjectName">
+                <h3>{name}</h3>
             </div>
-            <div className="ProjectDescription">
-                  <div className="name">
-                <h5 className="nameFont">{name}</h5>
-                <h5 className="date">{date}</h5>
+            <div className="ProjectImage">
+                <img src={image} alt="" />
             </div>
-            
             <div className="TechnologiesUsed">
                 {techs? techs.map((tech)=>{
                     tech.toLowerCase()
@@ -60,21 +51,11 @@ function ProjectView({name, image, description, techs, linkExec, invertido, date
                        }
                 }): null}
             </div>
-            <div className="description">
-                <p>{description}</p>
-            </div>
-            <div className="links">
-                <a className="" href={linkExec} target="Blank">
-                    <button>Visualizar execução</button>
-                </a>
-                <a className="" target="Blank" href={linkGit}>
-                <BsGithub  className="icon" size={30}/>
-                </a>
-            </div>
-            </div>
+        </div>
+            
+        
        
 
-        </div>
     )
 }
-export default ProjectView
+export default ProjectView2

@@ -1,59 +1,80 @@
 .projectContainer{
-     width: 60%;
-     height: 50%;
+     width: 30%;
+     height: 80%;
     display: flex;
-    flex-direction: row;
+    border-radius: 10px;
 
+    flex-direction: column;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    background-color: #1a0f33;
+    min-width: 400px;
+    min-height: 527px;
 }
 .projectImage{
-    width: 45%;
-    height: 100%;
+    width: 100%;
+    height: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .projectImage img{
-    min-width: 300px;
-    max-width: 400px;
+    border-radius: 10px;
+    min-height: 300px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .ProjectDescription{
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    height: 60%;
     display: flex;
+    /* margin-top: 5%; */
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 .name{
-    width: 100%;
+    width: 90%;
     height: 10%;
-    align-items: center;
+    margin: 20px 20px 0px 20px;
+    /* align-items: center; */
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+}
+.nameFont{
+    font-size: 130%;
+    color: white;
+
+}
+.date{
+    display: flex;
+    align-items: end;
+    color: rgb(206, 206, 206);
+    justify-content: end;
+    font-size: 80%;
 }
 .name h5{
-    width: 100%;
+    width: 50%;
     text-align: left;
-    color: white;
     margin: 0;
-    font-size: x-large;
 }
 .description{
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
+    padding: 0px 0px 0px 20px;
 
 }
 .description p{
-    width: 100%;
-    color: white;
+    width: 90%;
+    color: rgb(206, 206, 206);
     font-size: medium;
     text-align: left;
+    min-height: 42px;
 
 }
 .TechnologiesUsed{
@@ -61,6 +82,8 @@
     display: flex;
     align-items: center;
     grid-gap: 10px;
+    margin: 10px 00px 0px 20px;
+
 }
 .TechnologiesUsed img{
     width: 5%;
@@ -70,16 +93,24 @@
 
 .links{
     margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 0px 0px 0px 20px;
     width: 100%;
     height: 12%;
     display: flex;
     align-items: center;
-    justify-content: center;
     grid-gap: 20px;
+    min-height: 50px;
+
 }
 .links a{
     width: 40%;
     height: 100%;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    
+
 }
 .links a button{
     width: 100%;
@@ -94,37 +125,18 @@
     font-family: 'Soniano Sans Unicode', sans-serif;
     font-size: 16px;
     max-width: 400px;
+    min-height: 45px;
+
 }
+
 .links a:hover{
     cursor: pointer;
 }
+
 @media (max-width:1000px) {
-    .projectContainer{
-        width: 80%;
-        height: 50%;
-    }
+
     
 }
 @media (max-width:800px) {
-    .projectContainer{
-        flex-direction: column;
-        height: 80%;
-        width: 80%;
-    }
-    .ProjectDescription{
-        justify-content: flex-start;
-        width: 100%;
-    }
-    .projectImage{
-        width: 100%;
-    }
-    .links{
-        height: 50%;
-        flex-direction: column;
-    }
-    .links a{
-        width: 70%;
-        height: 30%;
-    }
-    
+   
 }

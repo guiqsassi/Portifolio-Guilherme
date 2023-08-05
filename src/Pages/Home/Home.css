@@ -156,6 +156,16 @@ button:hover{
     height: 800px;
  
   }
+  .photo{
+    align-items: center;
+    justify-content: center;
+  }
+  .right img{
+    width: 65%;
+    min-width: 180px;
+    border-radius: 100%;
+    
+  }
   .buttons a{
     width: 70%;
     height: 40%;
