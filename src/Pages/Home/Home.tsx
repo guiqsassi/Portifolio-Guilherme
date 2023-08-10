@@ -1,6 +1,6 @@
 import "./Home.css"
 import dino from "../../images/iconMe.jpg";
-import cv from "../../pdf/Cv.pdf"
+import cv from "../../pdf/CV.pdf"
 import { BsLinkedin, BsGithub} from "react-icons/bs";
 
 
