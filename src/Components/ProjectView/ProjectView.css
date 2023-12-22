@@ -1,27 +1,28 @@
 .projectContainer{
      width: 30%;
-     height: 80%;
+     /* height: 80%; */
     display: flex;
     border-radius: 10px;
-
+    margin: 20px;
     flex-direction: column;
-    margin-bottom: 5%;
-    margin-top: 5%;
+
     background-color: #1a0f33;
     min-width: 400px;
-    min-height: 527px;
+    min-height: 550px;
+    
 }
 .projectImage{
     width: 100%;
-    height: 40%;
+    /* height: 40%; */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .projectImage img{
     border-radius: 10px;
-    min-height: 300px;
     width: 100%;
+    object-fit: cover;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,6 +110,7 @@
     min-height: 45px;
     display: flex;
     align-items: center;
+    text-decoration: none;
     
 
 }

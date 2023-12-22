@@ -1,13 +1,11 @@
 #projects{
     height: auto;
-    min-height: 100vh;
-    overflow-x: hidden;
+    
 }
 .containerProjects{
     opacity: 0;
     transition: 1.5s;
     transform: translateX(100%);
-    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -38,10 +36,31 @@
 }
 .projetos{
     width: 80%;
-    height: 90%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
-    grid-gap: 10%;
-    justify-content: center;
     
+
+    
+}
+
+@media (max-Width:1600px) {
+    .projetos{
+        width: 90%;
+    }
+}
+@media (max-Width:1400px) {
+    .projetos{
+        width: 95%;
+    }
+}
+@media (max-Width:1300px) {
+    .projetos{
+        width: 100%;
+    }
+}
+@media (max-Width:1200px) {
+    .projetos{
+        justify-content: center;
+    }
 }
